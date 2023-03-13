@@ -1,0 +1,16 @@
+* {
+  background-color: #b2e0bd;
+}
+
+.argentina {
+  color: rgb(100, 184, 212);
+  background-color: white;
+}
+
+.form {
+  border: 3px solid black;
+  padding: 40px;
+  margin-top: 20px;
+  border-radius: 3px;
+  background-color: whitesmoke;
+}
