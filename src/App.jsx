@@ -1,7 +1,7 @@
 import "./App.css";
 import { Box, Flex } from "@chakra-ui/react";
 import TitleHead from "./components/TitleHead";
-import Navbar from "./components/navbar";
+import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import DownloadResume from "../src/components/DownloadResume";
 

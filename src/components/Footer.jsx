@@ -20,10 +20,18 @@ const Footer = () => {
         >
           Sections
         </Text>
-        <Text>Works</Text>
-        <Text>About Me</Text>
-        <Text>Skills</Text>
-        <Text>Get in touch</Text>
+        <a href="#work">
+          <Text>Works</Text>
+        </a>
+        <a href="#aboutMe">
+          <Text>About Me</Text>
+        </a>
+        <a href="#skills">
+          <Text>Skills</Text>
+        </a>
+        <a href="#GetInContact">
+          <Text>Get in touch</Text>
+        </a>
       </Flex>
       <Flex flexDir="column">
         <Text
@@ -43,7 +51,9 @@ const Footer = () => {
               borderRadius="3px"
               position="relative"
             >
-              <Image w="40px" bg="transparent" src={logoGit} />
+              <a href="https://github.com/Elborda" target="_blank">
+                <Image w="40px" bg="transparent" src={logoGit} />
+              </a>
             </Box>
           </Flex>
           <Box
@@ -52,7 +62,12 @@ const Footer = () => {
             border="3px solid black"
             borderRadius="3px"
           >
-            <Image w="40px" bg="transparent" src={linkedin} />
+            <a
+              href="https://www.linkedin.com/in/agustin-bordachar-333716233/"
+              target="_blank"
+            >
+              <Image w="40px" bg="transparent" src={linkedin} />
+            </a>
           </Box>
         </Flex>
       </Flex>

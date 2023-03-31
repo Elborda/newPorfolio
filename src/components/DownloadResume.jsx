@@ -32,6 +32,7 @@ const DownloadResume = () => {
   return (
     <>
       <Flex
+        w="216px"
         marginTop="40px"
         h="45px"
         justifyContent="center"

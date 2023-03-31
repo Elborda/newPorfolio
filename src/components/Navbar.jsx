@@ -19,28 +19,36 @@ const Navbar = () => {
               display="inline-block"
               padding="10px 50px"
             >
-              <Text>Works</Text>
+              <a href="#work">
+                <Text>Works</Text>
+              </a>
             </ListItem>
             <ListItem
               listStyleType="none"
               display="inline-block"
               padding="10px 50px"
             >
-              <Text>About me</Text>
+              <a href="#aboutMe">
+                <Text>About me</Text>
+              </a>
             </ListItem>
             <ListItem
               listStyleType="none"
               display="inline-block"
               padding="10px 50px"
             >
-              <Text>Skills</Text>
+              <a href="#skills">
+                <Text>Skills</Text>
+              </a>
             </ListItem>
             <ListItem
               listStyleType="none"
               display="inline-block"
               padding="10px 50px"
             >
-              <Text>Contact</Text>
+              <a href="#GetInContact">
+                <Text>Contact</Text>
+              </a>
             </ListItem>
           </UnorderedList>
         </Flex>

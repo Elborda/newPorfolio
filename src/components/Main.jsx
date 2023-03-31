@@ -25,16 +25,18 @@ const Main = () => {
 
   return (
     <>
-      <Banner
-        background="#FEC572"
-        svg={iconWork}
-        w={isLargerThan768 ? "45%" : "65%"}
-        content="My work"
-        fontSize="35px"
-        iconW="35px"
-        h="120px"
-        iconSize="20px"
-      />
+      <Box id="work">
+        <Banner
+          background="#FEC572"
+          svg={iconWork}
+          w={isLargerThan768 ? "45%" : "65%"}
+          content="My work"
+          fontSize="35px"
+          iconW="35px"
+          h="120px"
+          iconSize="20px"
+        />
+      </Box>
       <Flex justifyContent="center" alignItems="center">
         <SimpleGrid
           columns={[1, 2]}
@@ -42,11 +44,16 @@ const Main = () => {
           spacingY="20px"
           spacingX="40px"
         >
-          <Tarjetas />
-          <Tarjetas />
-          <Tarjetas />
-          <Tarjetas />
+          <Tarjetas
+            name="Giffy"
+            description="This project is a GIF searcher in which I used the Giphy API."
+            tech1="React"
+            tech2="CSS"
+          />
         </SimpleGrid>
+      </Flex>
+      <Flex justifyContent="center" alignItems="center" flexDir="column">
+        <DownloadResume />
       </Flex>
       <Flex justifyContent="center" alignItems="center">
         <SimpleGrid
@@ -55,7 +62,7 @@ const Main = () => {
           spacingY="20px"
           spacingX="40px"
         >
-          <Box>
+          <Box id="aboutMe">
             <Banner
               background="#6E96FA"
               svg={aboutMeIcon}
@@ -80,7 +87,7 @@ const Main = () => {
               creating projects with React Js.
             </Text>
           </Box>
-          <Box>
+          <Box id="skills">
             <Banner
               background="#bda0ea"
               svg={skills}
@@ -146,7 +153,12 @@ const Main = () => {
           </Box>
         </SimpleGrid>
       </Flex>
-      <Flex justifyContent="center" alignItems="center" marginTop="70px">
+      <Flex
+        justifyContent="center"
+        alignItems="center"
+        marginTop="70px"
+        id="GetInContact"
+      >
         <Banner
           background="#d9ef54"
           svg={emailok}
